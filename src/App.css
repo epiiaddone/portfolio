@@ -1,24 +1,133 @@
 
-.card{
+.projects-center{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+
+.card{
+    background-color: white;
+    border-radius: 22px;
+    padding:0.5rem;
+    border:1px solid var(--primary);
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    width:400px;
+}
+
+.card__top{
+    display:flex;
+    justify-content: space-between;
 }
 
 .card__title{
-
-}
-
-.card__description{
-
+text-align: center;
+font-size: 2rem;
+font-weight:bold;
+color:var(--secondary);
 }
 
 .card__buttons{
-
+    display:flex;
+    gap:1rem;
+    justify-content: space-evenly;
 }
+
+
+.card__buttons a{
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    color: var(--primary);
+    background-color: white;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.card__buttons a:hover{
+    background-color: var(--primary);
+    color:white;
+}
+
+.card__description{
+    text-align: center;
+}
+
 
 .card__size{
+color:var(--primary);
+}
+
+.card__features--title{
+font-weight:bold;
+}
+
+.card__features--values{
+ display:flex;
+ flex-direction: row;
+ gap:0.5rem;
+ flex-wrap: wrap;
+}
+
+.card__features--values div{
+    background-color: var(--primary);
+    color:white;
+    
+}
+
+.card__features--typescript{
 
 }
 
-.card__features{
+.card__features--redux{
+
+}
+
+.card__features--context{
+
+}
+
+.card__features--router{
+
+}
+
+.card__css{
+    display:flex;
+    flex-direction: row;
+}
+
+.card__css div{
+    background-color: #FFF5E4;
+    }
     
+
+.sausage{
+    text-align: center;
+    border-radius: 20px;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+
+.card__react-libraries{
+display:flex;
+flex-direction: row;
+}
+
+.card__react-libraries div{
+    background-color: #c09a57;
+    color:white;
+}
+
+.card__third-party-libraries{
+    display:flex;
+    flex-direction: row;
+}
+
+.card__third-party-libraries div{
+    background-color: #F9E8CC;
 }
