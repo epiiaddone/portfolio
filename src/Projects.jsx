@@ -43,52 +43,56 @@ const Projects = ()=>{
                     reactRouter='yes';
                     return(
                         <div className="card" key={id}>
-                            <div className="card__size">
-                                {simple? 'Small' : 'Large'} Project
+                            <div className="card__top">
+                                <div className="card__size">
+                                    {simple? 'Small' : 'Large'} Project
+                                </div>
+                                <div className="card__buttons">
+                                    <a target="_blank" href={liveUrl}>live site</a>
+                                    <a target="_blank" href={codeUrl}>github</a>
+                                </div>
                             </div>
                             <div className="card__title">{title}</div>
                             <div className="card__description">{description}</div>
-                            <div className="card__buttons">
-                                <a>live site</a>
-                                <a>github</a>
-                            </div>
-                            <div className="card__features">
-                                <div className="card__features--title">React</div>
-                                <div className="card__features--values">
-                                    {typeScript? <div className="sausage">typeScript</div> : ''}
-                                    {context? <div className="sausage">Context</div> : ''}
-                                    {redux? <div className="sausage">Redux</div> : ''}
-                                    {reactRouter? <div className="sausage">React Router</div> : ''}
+                            <div className="card__features--container">
+                                <div className="card__features">
+                                    <div className="card__features--title">React</div>
+                                    <div className="card__features--values">
+                                        {typeScript? <div className="sausage">typeScript</div> : ''}
+                                        {context? <div className="sausage">Context</div> : ''}
+                                        {redux? <div className="sausage">Redux</div> : ''}
+                                        {reactRouter? <div className="sausage">React Router</div> : ''}
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="card__features">
-                            <div className="card__features--title">CSS</div>
-                                <div className="card__features--values">
-                                {css.map((item)=>{
-                                    return(
-                                        <div className="sausage" key={item}>{item}</div>
-                                    )
-                                })}
+                                <div className="card__features">
+                                <div className="card__features--title">CSS</div>
+                                    <div className="card__features--values">
+                                    {css.map((item)=>{
+                                        return(
+                                            <div className="sausage" key={item}>{item}</div>
+                                        )
+                                    })}
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="card__features">
-                            <div className="card__features--title">React Libraries</div>
-                                <div className="card__features--values">
-                                {reactLibraries.map((lib)=>{
-                                    return(
-                                        <div className="sausage" key={lib}>{lib}</div>
-                                    )
-                                })}
-                                </div>
-                            </div>
-                            <div className="card__features">
-                                <div className="card__features--title">3rd Party Libraries</div>
-                                <div className="card__features--values">
-                                    {thirdPartyLibraries.map((lib)=>{
+                                <div className="card__features">
+                                <div className="card__features--title">React Libraries</div>
+                                    <div className="card__features--values">
+                                    {reactLibraries.map((lib)=>{
                                         return(
                                             <div className="sausage" key={lib}>{lib}</div>
                                         )
                                     })}
+                                    </div>
+                                </div>
+                                <div className="card__features">
+                                    <div className="card__features--title">3rd Party Libraries</div>
+                                    <div className="card__features--values">
+                                        {thirdPartyLibraries.map((lib)=>{
+                                            return(
+                                                <div className="sausage" key={lib}>{lib}</div>
+                                            )
+                                        })}
+                                    </div>
                                 </div>
                             </div>
                         </div>

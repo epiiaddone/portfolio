@@ -3,6 +3,10 @@
     margin:0px;
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
     background-color: #fffaf7
 }
@@ -10,4 +14,12 @@ body{
 :root{
     --primary:#EBC36A;
     --secondary:#c09a57;
+}
+
+.bg-primary{
+    background-color: var(--primary);
+}
+
+.bg-secondary{
+    background-color: var(--secondary);
 }

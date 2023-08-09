@@ -18,8 +18,11 @@
 }
 
 .card__top{
-    display:flex;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .card__title{
@@ -60,6 +63,12 @@ color:var(--secondary);
 color:var(--primary);
 }
 
+.card__features--container{
+    display:flex;
+    gap:0.75rem;
+    flex-direction: column;
+}
+
 .card__features--title{
 font-weight:bold;
 }
@@ -69,39 +78,8 @@ font-weight:bold;
  flex-direction: row;
  gap:0.5rem;
  flex-wrap: wrap;
+ color:white;
 }
-
-.card__features--values div{
-    background-color: var(--primary);
-    color:white;
-    
-}
-
-.card__features--typescript{
-
-}
-
-.card__features--redux{
-
-}
-
-.card__features--context{
-
-}
-
-.card__features--router{
-
-}
-
-.card__css{
-    display:flex;
-    flex-direction: row;
-}
-
-.card__css div{
-    background-color: #FFF5E4;
-    }
-    
 
 .sausage{
     text-align: center;
@@ -110,24 +88,8 @@ font-weight:bold;
     padding-left: 0.75rem;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
+    background-color: var(--secondary);
 }
 
 
-.card__react-libraries{
-display:flex;
-flex-direction: row;
-}
 
-.card__react-libraries div{
-    background-color: #c09a57;
-    color:white;
-}
-
-.card__third-party-libraries{
-    display:flex;
-    flex-direction: row;
-}
-
-.card__third-party-libraries div{
-    background-color: #F9E8CC;
-}
