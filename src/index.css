@@ -8,12 +8,16 @@ a{
 }
 
 body{
-    background-color: #fffaf7
+    background-color: black;
+    color:var(--grey-text);
+    font-family: "Montserrat", "Helvetica", "sans-serif";
 }
 
 :root{
     --primary:#EBC36A;
     --secondary:#c09a57;
+    --grey-text:#959595;
+    --white-text:white;
 }
 
 .bg-primary{
