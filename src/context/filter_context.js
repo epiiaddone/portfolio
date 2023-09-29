@@ -1,7 +1,7 @@
 import React, { useEffect, useContext, useReducer } from 'react'
 import reducer from '../reducers/filter_reducer'
 import {
-    LOAD_PROJECTS,
+  LOAD_PROJECTS,
   UPDATE_FILTERS,
   FILTER_PROJECTS,
   CLEAR_FILTERS,
@@ -13,10 +13,11 @@ const initialState = {
   filtered_projects: [],
   all_projects: [],
   filters: {
-    context:false,
-    redux:false,
-    reactRouter:false,
-    typeScript:false,
+    context: false,
+    redux: false,
+    reactRouter: false,
+    typeScript: false,
+    reactQuery: false,
   },
 }
 
@@ -26,9 +27,9 @@ export const FilterProvider = ({ children }) => {
   const { projects } = useProjectsContext()
   const [state, dispatch] = useReducer(reducer, initialState)
 
-  useEffect(()=>{
-    dispatch({type: LOAD_PROJECTS, payload:projects})
-  },[projects])
+  useEffect(() => {
+    dispatch({ type: LOAD_PROJECTS, payload: projects })
+  }, [projects])
 
   useEffect(() => {
     dispatch({ type: FILTER_PROJECTS })
